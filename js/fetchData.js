@@ -19,7 +19,7 @@ export async function fetchTopRankedMovies() {
     mainClass.innerHTML = "";
     notFoundDiv.classList.add('hide');
 
-    const rankedListUrl = `rrhttps://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1`;
+    const rankedListUrl = `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1`;
 
     const response = await fetch(rankedListUrl, options).catch(() => {
         errorNetwork();
@@ -64,7 +64,7 @@ async function movieSearch() {
     notFoundDiv.classList.add('hide');
     const inputValue = input.value;
 
-    const urlMovie = `rrhttps://api.themoviedb.org/3/search/movie?query=${inputValue}&include_adult=false&language=en-US&page=1`;
+    const urlMovie = `https://api.themoviedb.org/3/search/movie?query=${inputValue}&include_adult=false&language=en-US&page=1`;
 
     const response = await fetch(urlMovie, options).catch(() => {
         errorNetwork();
