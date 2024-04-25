@@ -29,3 +29,13 @@ Description when mouse hover
 
 Celebrity name search
 <img width="1219" alt="pedro" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/716c9cdf-12b8-4048-959f-4a01cdc80105">
+
+
+Error message for when user search on data that doesnt exist in the API
+<img width="1262" alt="nonameerror" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/16132650-d469-4eec-959e-817411bfeb5f">
+
+Error message for network issues
+<img width="1259" alt="networkerror" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/71b1fd75-c756-4503-9823-a1dfaf6e142c">
+
+
+
