@@ -22,11 +22,11 @@ Description of movies will show when hovering over the film and on Celebrity sea
 Movie Search
 <img width="1279" alt="moviesearch" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/b70c1212-e7da-45d4-b412-2afdc4f08987">
 
-Celebrity Search (hovering over Lovett)
+Celebrity search with mouse hovering over image for more details
 <img width="1275" alt="celebrities hover" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/357fb338-1f31-40b9-a834-41da683d4577">
 
-Description when mouse hover
-<img width="197" alt="hovermovie" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/5de201d0-e38f-4855-84a6-368aff78b234">
+Movie details when mouse hovering over image
+<img width="1273" alt="hoveringdescription" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/9fd6e259-11f9-4f4f-84aa-8495ae6ec4b9">
 
 Celebrity name search
 <img width="1219" alt="pedro" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/716c9cdf-12b8-4048-959f-4a01cdc80105">
