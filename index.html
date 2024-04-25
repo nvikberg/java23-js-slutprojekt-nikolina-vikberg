@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" type="module"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+
+        </div>
+       
+        <div class="userSearchContainer">
+            <div class="top10">
+
+            <ul>
+                <li><a id="top10Ranked" >Top 10 highest Ranked Movies</a></li>
+                <li><a id="top10Popular">Top 10 Most Popular Movies</a></li>
+            </ul>
+            </div>
+            <select id="selectionMenu" class="selectionMenu">
+                <option value="movieSelected" id="movieSelected">MOVIE</option>
+                <option value="celebritySelected" id="celebritySelected">CELEBRITY</option>
+            </select>
+            <input type="text" name="userSearch" placeholder="Search here"id="userSearch" class="userSearch">
+            <button id="searchBtn" class="searchBtn">Search</button>
+            <div class="error" id="errorMessage">
+                <p id="errorMessage"></p>
+            </div>
+            
+           
+        </div>
+           
+    </header>
+    <div class="top10" id="top10">
+    </div>
+    <div class="notFoundDiv" id="notFoundDiv">
+        <h1 class="notFoundText" id ="notFoundText"></h1>
+        <p class="checkSpelling" id ="checkSpelling"></p>
+
+    </div>
+
+
+    <div class="mainClass" id="mainClass">
+        </div>
+       <div class ="hide"></div>
+
+    </body>
+
+</html>

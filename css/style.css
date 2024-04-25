@@ -1,0 +1,204 @@
+.mainClass {
+  display: flex;
+  /* overflow-x: auto; */
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #222;
+}
+
+.header {
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  background-color: #222;
+}
+
+
+.top10 {
+  margin-left: 10px;
+  justify-content: space-between;
+}
+
+.userSearchContainer {
+  display: flex;
+justify-content: center ;
+}
+
+.selectionMenu {
+  position:relative;
+  top:100%;
+  right:0;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px;
+
+}
+
+.userSearch {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  color: #1a2734;
+  border-radius: 0%;
+  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 3px 10px 4px;
+  text-transform: none;
+}
+
+.userSearch:focus {
+  outline: 0;
+  background-color: white;
+}
+
+
+.searchBtn {
+  background-color: #b25645;
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 3px 10px 4px;
+  text-align: right;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.searchBtn:hover,
+.searchBtn:focus {
+  opacity: .75;
+}
+
+
+/* style for movieCards divs */
+.movie {
+  flex: 0 0 auto;
+  width: calc(15% - 10px); /* reduces the width of each movie div */
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 0.2px 4px 5px rgb(56, 53, 53);
+  background-color: #292725;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie-title {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* the hovering div */
+.movie-description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #DFDACE;
+  padding: 1rem;
+  height: auto;
+  transform: translateY(101%);
+  transition: transform 0.5s ease-in
+}
+
+
+.movie:hover .movie-description {
+  transform: translateY(0%);
+
+}
+
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.hide{
+  display:none;
+}
+
+h4,
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+/* no img available  */
+img {
+  color: white;
+}
+
+
+/* style for nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: left;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+.error {
+color: red;
+}
+
+.notFound {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  padding: 20px;
+  border: 1px solid black;
+  text-align: center;
+
+}
+
+.notFoundText{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+.checkSpelling{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+
+}
