@@ -27,7 +27,7 @@
                 <option value="movieSelected" id="movieSelected">MOVIE</option>
                 <option value="celebritySelected" id="celebritySelected">CELEBRITY</option>
             </select>
-            <input type="text" name="userSearch" placeholder="Search here"id="userSearch" class="userSearch">
+            <input type="text" name="userSearch" placeholder="Search here"id="userSearch" class="userSearch" required>
             <button id="searchBtn" class="searchBtn">Search</button>
             <div class="error" id="errorMessage">
                 <p id="errorMessage"></p>
@@ -41,8 +41,10 @@
     </div>
     <div class="notFoundDiv" id="notFoundDiv">
         <h1 class="notFoundText" id ="notFoundText"></h1>
-        <p class="checkSpelling" id ="checkSpelling"></p>
-
+        <p class="checkSpelling" id="checkSpelling"></p>
+        </div>
+        <div class="errorDiv" id="errorDiv">
+        <h1 class="errorText" id ="errorText"></h1>
     </div>
 
 
