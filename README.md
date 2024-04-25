@@ -1,7 +1,8 @@
 # java23-js-slutprojekt-nikolina-vikberg
 JavaScript slutprojekt - Movie portal
+
 Film portal using API from themoviedb.org
-https://developer.themoviedb.org/reference/intro/getting-started
+https://developer.themoviedb.org
 
 Author: Nikolina Vikberg
 2024 Malmö
