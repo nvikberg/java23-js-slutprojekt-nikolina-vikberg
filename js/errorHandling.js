@@ -16,6 +16,7 @@ export function errorNotFound() {
     const notFoundText = document.querySelector('#notFoundText');
 
     notFoundText.innerText= 'Not Found';
+notFoundDiv.innerHTML = '';
 
     notFoundDiv.classList.add('notFound');
 
@@ -32,6 +33,7 @@ const notFoundDiv = document.querySelector('#notFoundDiv');
 const notFoundText = document.querySelector('#notFoundText');
 
 notFoundText.innerText= 'Network Error';
+notFoundDiv.innerHTML = '';
 
 notFoundDiv.classList.add('notFound');
 
