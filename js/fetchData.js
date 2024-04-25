@@ -1,5 +1,5 @@
 import { addDataToMovieCards, addDataToCelebrityCards, addDataToTop10Cards } from "./dataToCards.js";
-import { errorEmptySearch, errorNotFound, errorNetwork } from "./errorHandling.js";
+import { errorNotFound, errorNetwork } from "./errorHandling.js";
 
 //API KEY
 const BAERER_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjUyODgzNTk5OGQ3YzlhNDM2MmRjNDI5NzI2M2JiMSIsInN1YiI6IjY2MWY5YTZiNTI4YjJlMDE2NDNmNWIxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AEQ-SaHrYRbowVIpI_HgGjEjRtxvZNTCyrRi1_HQaF4';
@@ -19,7 +19,7 @@ export async function fetchTopRankedMovies() {
     mainClass.innerHTML = "";
     notFoundDiv.classList.add('hide');
 
-    const rankedListUrl = `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1`;
+    const rankedListUrl = `rrhttps://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1`;
 
     const response = await fetch(rankedListUrl, options).catch(() => {
         errorNetwork();
@@ -64,9 +64,7 @@ async function movieSearch() {
     notFoundDiv.classList.add('hide');
     const inputValue = input.value;
 
-    errorEmptySearch(inputValue);
-
-    const urlMovie = `https://api.themoviedb.org/3/search/movie?query=${inputValue}&include_adult=false&language=en-US&page=1`;
+    const urlMovie = `rrhttps://api.themoviedb.org/3/search/movie?query=${inputValue}&include_adult=false&language=en-US&page=1`;
 
     const response = await fetch(urlMovie, options).catch(() => {
         errorNetwork();
@@ -94,8 +92,6 @@ async function movieSearch() {
 async function celebritySearch() {
     mainClass.innerHTML = "";
     const inputValue = input.value;
-
-    errorEmptySearch(inputValue);
 
     const urlCelebrity = `https://api.themoviedb.org/3/search/person?query=${inputValue}&include_adult=false&language=en-US&page=1`;
 
