@@ -1,16 +1,17 @@
 # java23-js-slutprojekt-nikolina-vikberg
 JavaScript slutprojekt - Movie portal
 
-Film portal using API from themoviedb.org
-https://developer.themoviedb.org
-
 Author: Nikolina Vikberg
 2024 Malmö
+ End project for JavaScript 1, in Java Developer program at Grit Academy
 
 Link to github pages 
 https://nvikberg.github.io/java23-js-slutprojekt-nikolina-vikberg/
+
+Film portal using API from themoviedb.org
+https://developer.themoviedb.org
+
   
- End project for JavaScript 1, in Java Developer program at Grit Academy
  
  This is a movie website that shows the top 10 highest ranked movies & top 10 most popular movies right now, 
  it also has a user search funtion for movies and celeberities.
