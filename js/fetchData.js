@@ -126,10 +126,10 @@ export function selectionEvent(event) {
 
 
     if (selectionMenu === movieSelected) {
-        movieSearch().catch(errorNetwork());
+        movieSearch().catch(errorNetwork);
         console.log(movieSelected)
     } else {
-        celebritySearch().catch(errorNetwork());
+        celebritySearch().catch(errorNetwork);
         console.log(celebritySelected);
     }
 }
