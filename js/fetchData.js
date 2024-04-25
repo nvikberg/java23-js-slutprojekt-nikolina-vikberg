@@ -72,7 +72,6 @@ async function movieSearch() {
 
 
     if (response.ok) {
-       notFoundDiv.classList.add('hide');
         const data = await response.json()
         console.log(data)
 
@@ -102,7 +101,6 @@ async function celebritySearch() {
     const response = await fetch(urlCelebrity, options);
 
     if (response.ok) {
-        notFoundDiv.classList.add('hide');
         const data = await response.json();
 
         if (data.results.length === 0) {
