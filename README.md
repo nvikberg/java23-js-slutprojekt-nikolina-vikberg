@@ -19,7 +19,7 @@ Description of movies will show when hovering over the film and on Celebrity sea
 Movie Search
 <img width="1279" alt="moviesearch" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/b70c1212-e7da-45d4-b412-2afdc4f08987">
 
-Celebrity Search
+Celebrity Search (hovering over Lovett)
 <img width="1275" alt="celebrities hover" src="https://github.com/nvikberg/java23-js-slutprojekt-nikolina-vikberg/assets/149555646/357fb338-1f31-40b9-a834-41da683d4577">
 
 Description when mouse hover
