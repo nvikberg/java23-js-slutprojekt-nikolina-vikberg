@@ -14,11 +14,16 @@ export function errorEmptySearch(inputValue) {
 export function errorNotFound() {
     const notFoundDiv = document.querySelector('#notFoundDiv');
     const notFoundText = document.querySelector('#notFoundText');
+    const checkSpelling = document.createElement('p');
+
 
     notFoundText.innerText= 'Not Found';
-notFoundDiv.innerHTML = '';
+    checkSpelling.innerText= 'Please check your spelling and try again';
+    checkSpelling.classList.add('checkSpelling')
+
 
     notFoundDiv.classList.add('notFound');
+
 
     notFoundDiv.append(notFoundText, checkSpelling);
     notFoundDiv.classList.remove('hide');
@@ -33,9 +38,10 @@ const notFoundDiv = document.querySelector('#notFoundDiv');
 const notFoundText = document.querySelector('#notFoundText');
 
 notFoundText.innerText= 'Network Error';
-notFoundDiv.innerHTML = '';
 
 notFoundDiv.classList.add('notFound');
+notFoundDiv.innerHTML = '';
+
 
 notFoundDiv.append(notFoundText);
 notFoundDiv.classList.remove('hide');
