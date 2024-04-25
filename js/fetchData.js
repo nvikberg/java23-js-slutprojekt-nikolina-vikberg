@@ -58,7 +58,7 @@ export async function fetchTopPopularMovies() {
     }
 }
 
-//fetches movie (user search) from API and handles user input error / data not found error
+//fetches movie (user search) from API and handles network error / data not found error
 async function movieSearch() {
     mainClass.innerHTML = "";
     notFoundDiv.classList.add('hide');
@@ -88,7 +88,7 @@ async function movieSearch() {
     }
 }
 
-//fetches celebrity (user search) from API and handles user input error / data not found error
+//fetches celebrity (user search) from API and handles network error / data not found error
 async function celebritySearch() {
     mainClass.innerHTML = "";
     const inputValue = input.value;
@@ -115,7 +115,7 @@ async function celebritySearch() {
     }
 }
 
-//handles users selections in search drop down menu and networkError
+//handles users selections in search drop down menu
 export function selectionEvent(event) {
     event.preventDefault();
 
