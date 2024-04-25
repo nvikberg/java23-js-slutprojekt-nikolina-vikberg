@@ -21,8 +21,10 @@ export async function fetchTopRankedMovies() {
 
     const rankedListUrl = `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1`;
 
-    const response = await fetch(rankedListUrl, options).catch(errorNetwork);
-    console.log(errorNetwork)
+    const response = await fetch(rankedListUrl, options).catch(() => {
+        errorNetwork();
+    });
+
 
     if (response.ok) {
         const data = await response.json();
@@ -39,9 +41,12 @@ export async function fetchTopRankedMovies() {
 export async function fetchTopPopularMovies() {
     mainClass.innerHTML = "";
     notFoundDiv.classList.add('hide');
+
     const popularListUrl = `https://api.themoviedb.org/3/movie/popular?language=en-US&page=1`;
 
-    const response = await fetch(popularListUrl, options).catch(errorNetwork);
+    const response = await fetch(popularListUrl, options).catch(() => {
+        errorNetwork();
+    });
 
     if (response.ok) {
         const data = await response.json();
@@ -53,9 +58,10 @@ export async function fetchTopPopularMovies() {
     }
 }
 
-//fetches movie (user search) from API and handles network error / user input error / data not found error
+//fetches movie (user search) from API and handles user input error / data not found error
 async function movieSearch() {
     mainClass.innerHTML = "";
+    notFoundDiv.classList.add('hide');
     const inputValue = input.value;
 
     errorEmptySearch(inputValue);
@@ -66,13 +72,12 @@ async function movieSearch() {
 
 
     if (response.ok) {
-        notFoundDiv.classList.add('hide');
-        const data = await response.json();
+       notFoundDiv.classList.add('hide');
+        const data = await response.json()
         console.log(data)
 
         if (data.results.length === 0) {
             console.log(data.results.length)
-
             errorNotFound();
             console.log('here')
         }
@@ -85,7 +90,7 @@ async function movieSearch() {
     }
 }
 
-//fetches celebrity (user search) from API and handles network error / user input error / data not found error
+//fetches celebrity (user search) from API and handles user input error / data not found error
 async function celebritySearch() {
     mainClass.innerHTML = "";
     const inputValue = input.value;
@@ -97,12 +102,11 @@ async function celebritySearch() {
     const response = await fetch(urlCelebrity, options);
 
     if (response.ok) {
-        const data = await response.json();
         notFoundDiv.classList.add('hide');
+        const data = await response.json();
 
         if (data.results.length === 0) {
             console.log(data.results.length)
-
             errorNotFound();
         }
         console.log(data.results)
@@ -114,7 +118,7 @@ async function celebritySearch() {
     }
 }
 
-//handles users selections in search drop down menu
+//handles users selections in search drop down menu and networkError
 export function selectionEvent(event) {
     event.preventDefault();
 
@@ -124,10 +128,10 @@ export function selectionEvent(event) {
 
 
     if (selectionMenu === movieSelected) {
-        movieSearch().catch(errorNetwork);
+        movieSearch().catch(errorNetwork());
         console.log(movieSelected)
     } else {
-        celebritySearch().catch(errorNetwork);
+        celebritySearch().catch(errorNetwork());
         console.log(celebritySelected);
     }
 }
