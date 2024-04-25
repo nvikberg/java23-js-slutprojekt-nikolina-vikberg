@@ -4,9 +4,6 @@ export function errorEmptySearch(inputValue) {
         errorMessage.innerText = 'Empty search field';
         errorMessage.classList.remove('hide');
         return errorMessage;
-    } else {
-        errorMessage.classList.add('hide');
-
     }
 }
 
