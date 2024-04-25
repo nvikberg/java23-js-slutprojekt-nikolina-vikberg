@@ -68,8 +68,9 @@ async function movieSearch() {
 
     const urlMovie = `https://api.themoviedb.org/3/search/movie?query=${inputValue}&include_adult=false&language=en-US&page=1`;
 
-    const response = await fetch(urlMovie, options);
-
+    const response = await fetch(urlMovie, options).catch(() => {
+        errorNetwork();
+    });
 
     if (response.ok) {
         const data = await response.json()
@@ -98,7 +99,9 @@ async function celebritySearch() {
 
     const urlCelebrity = `https://api.themoviedb.org/3/search/person?query=${inputValue}&include_adult=false&language=en-US&page=1`;
 
-    const response = await fetch(urlCelebrity, options);
+    const response = await fetch(urlCelebrity, options).catch(() => {
+        errorNetwork();
+    });
 
     if (response.ok) {
         const data = await response.json();
@@ -126,10 +129,10 @@ export function selectionEvent(event) {
 
 
     if (selectionMenu === movieSelected) {
-        movieSearch().catch(errorNetwork);
+        movieSearch();
         console.log(movieSelected)
     } else {
-        celebritySearch().catch(errorNetwork);
+        celebritySearch();
         console.log(celebritySelected);
     }
 }
