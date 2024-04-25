@@ -1,11 +1,13 @@
 # java23-js-slutprojekt-nikolina-vikberg
 JavaScript slutprojekt - Movie portal
 Film portal using themoviedb.org API
+https://developer.themoviedb.org/reference/intro/getting-started
 
 Author: Nikolina Vikberg
 2024 Malmö
 
-Reference: https://developer.themoviedb.org/reference/intro/getting-started
+Link to github pages 
+https://nvikberg.github.io/java23-js-slutprojekt-nikolina-vikberg/
   
  End project for JavaScript 1, in Java Developer program at Grit Academy
  This website shows the top 10 highest ranked movies, top 10 most popular movies right now, 
