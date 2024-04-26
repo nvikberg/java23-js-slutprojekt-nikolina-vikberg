@@ -1,4 +1,4 @@
-# java23-js-slutprojekt-nikolina-vikberg
+# Java23 JavaScript Slutprojekt Nikolina Vikberg
 JavaScript Project - Movie Portal
 
 Author: Nikolina Vikberg
