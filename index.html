@@ -14,44 +14,47 @@
         <div class="header">
 
         </div>
-       
-        <div class="userSearchContainer">
-            <div class="top10">
 
-            <ul>
-                <li><a id="top10Ranked" >Top 10 highest Ranked Movies</a></li>
-                <li><a id="top10Popular">Top 10 Most Popular Movies</a></li>
-            </ul>
+        <div class="userSearchContainer">
+            <div class="top10" id="top10">
+
+                <ul>
+                    <li><a id="top10Ranked">Top 10 highest Ranked Movies</a></li>
+                    <li><a id="top10Popular">Top 10 Most Popular Movies</a></li>
+                </ul>
             </div>
-            <select id="selectionMenu" class="selectionMenu">
-                <option value="movieSelected" id="movieSelected">MOVIE</option>
-                <option value="celebritySelected" id="celebritySelected">CELEBRITY</option>
-            </select>
-            <input type="text" name="userSearch" placeholder="Search here"id="userSearch" class="userSearch" required>
-            <button id="searchBtn" class="searchBtn">Search</button>
+
+            <form id="searchForm" class="searchForm">
+                <select id="selectionMenu" class="selectionMenu">
+                    <option value="movieSelected" id="movieSelected">MOVIE</option>
+                    <option value="celebritySelected" id="celebritySelected">CELEBRITY</option>
+                </select>
+                <input type="text" name="userSearch" placeholder="Search here" id="userSearch" class="userSearch"
+                    required>
+                <button id="searchBtn" class="searchBtn">Search</button>
+            </form>
+        </div>
+
             <div class="error" id="errorMessage">
                 <p id="errorMessage"></p>
             </div>
-            
-           
-        </div>
-           
+
+
     </header>
-    <div class="top10" id="top10">
     </div>
     <div class="notFoundDiv" id="notFoundDiv">
-        <h1 class="notFoundText" id ="notFoundText"></h1>
+        <h1 class="notFoundText" id="notFoundText"></h1>
         <p class="checkSpelling" id="checkSpelling"></p>
-        </div>
-        <div class="errorDiv" id="errorDiv">
-        <h1 class="errorText" id ="errorText"></h1>
+    </div>
+    <div class="errorDiv" id="errorDiv">
+        <h1 class="errorText" id="errorText"></h1>
     </div>
 
 
     <div class="mainClass" id="mainClass">
-        </div>
-       <div class ="hide"></div>
+    </div>
+    <div class="hide"></div>
 
-    </body>
+</body>
 
 </html>
