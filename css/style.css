@@ -17,20 +17,20 @@ body {
 }
 
 
-.top10 {
-  margin-left: 10px;
-  justify-content: space-between;
-}
-
 .userSearchContainer {
   display: flex;
-justify-content: center ;
+  justify-content: space-evenly ;
+}
+
+.top10 {
+  /* position:relative; */
+
+  /* left: 0; */
 }
 
 .selectionMenu {
-  position:relative;
-  top:100%;
-  right:0;
+  /* position:relataive; */
+  /* right:0; */
   padding: 0.5rem 1rem;
   background-color: white;
   border-top-left-radius: 10px; 
