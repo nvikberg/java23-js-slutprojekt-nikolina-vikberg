@@ -16,4 +16,4 @@ fetchTopPopularMovies();
 
 document.querySelector("#top10Ranked").addEventListener("click", fetchTopRankedMovies);
 document.querySelector("#top10Popular").addEventListener("click", fetchTopPopularMovies);
-document.querySelector('#searchBtn').addEventListener('submit', selectionEvent )
+document.querySelector('#searchForm').addEventListener('submit', selectionEvent )
