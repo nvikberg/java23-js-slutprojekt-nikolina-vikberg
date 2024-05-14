@@ -23,14 +23,9 @@ body {
 }
 
 .top10 {
-  /* position:relative; */
-
-  /* left: 0; */
 }
 
 .selectionMenu {
-  /* position:relataive; */
-  /* right:0; */
   padding: 0.5rem 1rem;
   background-color: white;
   border-top-left-radius: 10px; 
