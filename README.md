@@ -1,8 +1,7 @@
 # Java23 JavaScript Slutprojekt Nikolina Vikberg
-JavaScript Project - Movie Portal
+## JavaScript End Project - Movie Portal
 
-Author: Nikolina Vikberg
-2024 Malmö
+### Author: Nikolina Vikberg, Grit Academy Malmö
 
 Link to github pages 
 https://nvikberg.github.io/java23-js-slutprojekt-nikolina-vikberg/
